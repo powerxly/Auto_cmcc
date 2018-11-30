@@ -1,0 +1,10 @@
+2018-11-19 17:23:32,390  - INFO - 选择的浏览器为: Chrome 浏览器
+2018-11-19 17:23:32,390  - INFO - 打开的URL为: http://10.2.87.115:8089/www/#/login
+2018-11-19 17:23:34,583  - INFO - 启动谷歌浏览器
+2018-11-19 17:23:35,187  - INFO - 打开URL: http://10.2.87.115:8089/www/#/login
+2018-11-19 17:23:36,318  - INFO - 全屏当前窗口
+2018-11-19 17:23:36,319  - INFO - 设置5秒隐式等待时间
+2018-11-19 17:23:36,320  - INFO - 清空文本框内容: //*[@id="loginForm"]/div[2]/label[1]/input...
+2018-11-19 17:23:37,394  - INFO - 输入内容方式 by xpath: //*[@id="loginForm"]/div[2]/label[1]/input...
+2018-11-19 17:23:37,394  - INFO - 输入内容: daizhong
+2018-11-19 17:23:39,483  - INFO - 清空文本框内容: /html/body/ion-side-menus/ion-side-menu-content/ion-nav-view/ion-view[2]/ion-content/div[1]/form/div[2]/div[2]/input...

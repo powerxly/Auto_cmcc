@@ -1,0 +1,139 @@
+1542352245948	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\jason\\AppData\\Local\\Temp\\rust_mozprofile.VDoRk1gcVxBN"
+Unable to read VR Path Registry from C:\Users\jason\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\jason\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\jason\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\jason\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\jason\AppData\Local\openvr\openvrpaths.vrpath
+1542352248240	Marionette	INFO	Listening on port 51830
+1542352248693	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 5520, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 12924, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 12924, Chrome_C[Parent 5520, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 12576, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 12576, Chro[Parent 5520, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Chi*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+[GPU 15860
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542352271351	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\jason\\AppData\\Local\\Temp\\rust_mozprofile.s7c4fpf9jJsK"
+Unable to read VR Path Registry from C:\Users\jason\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\jason\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\jason\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\jason\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\jason\AppData\Local\openvr\openvrpaths.vrpath
+1542352273071	Marionette	INFO	Listening on port 51911
+1542352273487	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/plugins/every_cookie_4644b13.js, line 4: ReferenceError: c is not defined
+[Parent 15436, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 15436, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 5628, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 5628, Chrome_Chil[Child 13236, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 13236, C[Parent 15436, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 12392, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 12392, Chrome_ChildTh*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+[GPU 5892, Chrome_ChildThread
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542353346596	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\jason\\AppData\\Local\\Temp\\rust_mozprofile.Dwfe0uxpa5mW"
+Unable to read VR Path Registry from C:\Users\jason\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\jason\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\jason\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\jason\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\jason\AppData\Local\openvr\openvrpaths.vrpath
+1542353348354	Marionette	INFO	Listening on port 54513
+1542353348733	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://cloudoa.test.hq.cmcc/cmoa-webapp1/js/plugins/extend/jquery-1.10.2.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://cloudoa.test.hq.cmcc/cmoa-webapp1/js/grcsp-jslib/grcsp-jquery-ext.js, line 8: ReferenceError: require is not defined
+JavaScript error: http://cloudoa.test.hq.cmcc/cmoa-webapp1/js/component/lock.js, line 7: TypeError: $.backstretch is not a function
+JavaScript error: http://cloudoa.test.hq.cmcc/cmoa-webapp1/js/require.js?grcspV=2.0-No65-20170209, line 5: Error: Module name "pageRender" has not been loaded yet for context: _. Use require([])
+http://requirejs.org/docs/errors.html#notloaded
+JavaScript error: http://cloudoa.test.hq.cmcc/cmoa-webapp1/js/plugins/extend/bootstrap-popover.js?grcspV=2.0-No65-20170209, line 37: TypeError: $.fn.tooltip.Constructor is undefined
+JavaScript error: http://cloudoa.test.hq.cmcc/cmoa-webapp1/js/plugins/extend/bootstrap-popover.js?grcspV=2.0-mutliapp-SNAPSHOT, line 37: TypeError: $.fn.tooltip.Constructor is undefined
+[Parent 2972, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 13704, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 13704, Chrome_Chi[Parent 2972, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 620, Chrome_ChildThread] WARNING: pipe error: 232: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 513
+[Child 620, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 620, Chrome_ChildThread][Parent 2972, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 18008, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 18008,*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+[GPU 900, Chrome_ChildThr
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542353392655	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\jason\\AppData\\Local\\Temp\\rust_mozprofile.44MgjOtoZMGV"
+Unable to read VR Path Registry from C:\Users\jason\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\jason\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\jason\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\jason\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\jason\AppData\Local\openvr\openvrpaths.vrpath
+1542353394407	Marionette	INFO	Listening on port 54632
+1542353394808	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://cloudoa.test.hq.cmcc/cmoa-webapp1/js/plugins/extend/jquery-1.10.2.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://cloudoa.test.hq.cmcc/cmoa-webapp1/js/grcsp-jslib/grcsp-jquery-ext.js, line 8: ReferenceError: require is not defined
+JavaScript error: http://cloudoa.test.hq.cmcc/cmoa-webapp1/js/component/lock.js, line 7: TypeError: $.backstretch is not a function
+1542376606915	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\jason\\AppData\\Local\\Temp\\rust_mozprofile.ZD1HhZCNVgX0"
+Unable to read VR Path Registry from C:\Users\jason\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\jason\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\jason\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\jason\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\jason\AppData\Local\openvr\openvrpaths.vrpath
+1542376608818	Marionette	INFO	Listening on port 58106
+1542376609066	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://cloudoa.test.hq.cmcc/cmoa-webapp1/js/plugins/extend/jquery-1.10.2.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://cloudoa.test.hq.cmcc/cmoa-webapp1/js/grcsp-jslib/grcsp-jquery-ext.js, line 8: ReferenceError: require is not defined
+JavaScript error: http://cloudoa.test.hq.cmcc/cmoa-webapp1/js/component/lock.js, line 7: TypeError: $.backstretch is not a function
+JavaScript error: http://cloudoa.test.hq.cmcc/cmoa-webapp1/js/grcsp-jslib/page-render.js?grcspV=2.0-mutliapp-SNAPSHOT, line 677: ReferenceError: resize is not defined
+JavaScript error: http://cloudoa.test.hq.cmcc/cmoa-webapp1/js/plugins/extend/bootstrap-popover.js?grcspV=2.0-No65-20170209, line 37: TypeError: $.fn.tooltip.Constructor is undefined
+JavaScript error: http://cloudoa.test.hq.cmcc/cmoa-webapp1/utsHome/main, line 1: ReferenceError: showHistoricTabView is not defined
+[Child 9768, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9768, Chrome_C[Child 16304, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 16304, Chro[Parent 15204, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+[GPU 14640,
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542376663895	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\jason\\AppData\\Local\\Temp\\rust_mozprofile.urmc1bbX4oj9"
+Unable to read VR Path Registry from C:\Users\jason\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\jason\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\jason\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\jason\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\jason\AppData\Local\openvr\openvrpaths.vrpath
+1542376665621	Marionette	INFO	Listening on port 58174
+1542376666048	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://cloudoa.test.hq.cmcc/cmoa-webapp1/js/plugins/extend/jquery-1.10.2.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://cloudoa.test.hq.cmcc/cmoa-webapp1/js/grcsp-jslib/grcsp-jquery-ext.js, line 8: ReferenceError: require is not defined
+JavaScript error: http://cloudoa.test.hq.cmcc/cmoa-webapp1/js/component/lock.js, line 7: TypeError: $.backstretch is not a function
+JavaScript error: http://cloudoa.test.hq.cmcc/cmoa-webapp1/js/require.js?grcspV=2.0-No65-20170209, line 5: Error: Load timeout for modules: placeholder
+http://requirejs.org/docs/errors.html#timeout
+[Parent 14328, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 11488, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 11488, Ch[Parent 14328, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9548, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9548, Chrome_ChildThread] WARNING: p[Parent 14328, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 10420, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 10420, Chrome_[GPU 14072, 
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542376754291	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\jason\\AppData\\Local\\Temp\\rust_mozprofile.HajmIdSiOIvM"
+Unable to read VR Path Registry from C:\Users\jason\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\jason\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\jason\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\jason\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\jason\AppData\Local\openvr\openvrpaths.vrpath
+1542376756236	Marionette	INFO	Listening on port 58286
+1542376756437	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: http://cloudoa.test.hq.cmcc/cmoa-webapp1/js/plugins/extend/jquery-1.10.2.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: http://cloudoa.test.hq.cmcc/cmoa-webapp1/js/grcsp-jslib/grcsp-jquery-ext.js, line 8: ReferenceError: require is not defined
+JavaScript error: http://cloudoa.test.hq.cmcc/cmoa-webapp1/js/component/lock.js, line 7: TypeError: $.backstretch is not a function
+JavaScript warning: http://cloudoa.test.hq.cmcc/cmoa-webapp1/js/common/app.moduleOperation.BaseModule.js?grcspV=2.0-No65-20170209, line 1224: unreachable code after return statement
+[Parent 13136, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 13136, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 15208, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 15208,[Child 11336, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 11[Parent 13136, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 17640, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 17640, Chro*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+[GPU 18240, Chro
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1542378310141	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\jason\\AppData\\Local\\Temp\\rust_mozprofile.1wpMghSWINVD"
