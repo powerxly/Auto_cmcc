@@ -102,7 +102,7 @@ class TestOnlineCheckPC(unittest.TestCase):
                 self.driver.switch_to.window(windows[0])
             cmcc.close()
 
-    def test_donecheck(self):
+    def test_donecheck(self):#啊啊
         for key,value in CmccPage.userList.items():
             driver = BrowserDriver(self)
             self.driver = driver.openbrowser(self)
