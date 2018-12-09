@@ -258,3 +258,14 @@ class BasePage(object):
         time.sleep(2)
         alert.accept()
         time.sleep(2)
+
+    def change_to_iframe(self,loc,timeout=10):
+        '''选择进入对应iframe框架'''
+        try:
+            iframe = WebDriverWait(self.driver, timeout, 1).until(EC.presence_of_all_elements_located(loc))
+            self.driver.switch_to.frame(loc)
+            logger.info('进入到iframe %s' % loc)
+        except NoSuchElementException as nsee:
+            logger.error("关闭浏览器窗口失败 %s" % nsee)
+
+

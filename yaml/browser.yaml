@@ -10,3 +10,6 @@ testUrl:
 testUrlMobile:
   URL : http://10.2.87.115:8089/www/#/login
 
+uatTestUrlMobile:
+  URL : xxxxxxxxx
+
