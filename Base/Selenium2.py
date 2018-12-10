@@ -9,6 +9,7 @@ from selenium.webdriver.support.select import Select
 from selenium.common.exceptions import * #导入所有的异常类
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
+from selenium import webdriver
 import os.path
 from .logger import Logger
 import time
@@ -262,10 +263,16 @@ class BasePage(object):
     def change_to_iframe(self,loc,timeout=10):
         '''选择进入对应iframe框架'''
         try:
-            iframe = WebDriverWait(self.driver, timeout, 1).until(EC.presence_of_all_elements_located(loc))
+            iframe = WebDriverWait(self.driver, timeout, 1)
             self.driver.switch_to.frame(loc)
             logger.info('进入到iframe %s' % loc)
         except NoSuchElementException as nsee:
-            logger.error("关闭浏览器窗口失败 %s" % nsee)
+            logger.error("进入iframe失败 %s" % nsee)
+
+    def change_to_window(self,loc):
+        '''选择进入窗口，0，5，4，3，2，1,1永远为最后的窗口'''
+        self.driver.switch_to.window(self.driver.window_handles[loc])
+
+
 
 

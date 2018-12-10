@@ -1,7 +1,8 @@
-## <center> **Vantpy1.0**</center>
+## <center> **Vantpy1.01**</center>
 
 ---
 #### 关于框架：
+重要声明：Vantpy1.0原作者Vant 944921374@qq.com
 Vantpy框架基于Selenium+Yaml+Unittest搭建的WebUI自动化测试框架
 
 #### 特点：
@@ -14,6 +15,9 @@ Vantpy框架基于Selenium+Yaml+Unittest搭建的WebUI自动化测试框架
 
 #### 部署环境：
 - Python 3.6+：https://www.python.org/
+
+#### 更新日志：
+1.01 封装了选择窗口、选择iframe、点击alert方法。
 
 #### 使用到的package：
 
