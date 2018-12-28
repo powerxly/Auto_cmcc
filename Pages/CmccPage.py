@@ -20,30 +20,30 @@ class CmccPage(BasePage):
     handleButton = (By.XPATH,'/html/body/ion-side-menus/ion-side-menu-content/ion-nav-view/ion-view[2]/ion-tabs/div[3]/div/ion-footer-bar')
     formText = (By.XPATH,'/html/body/ion-side-menus/ion-side-menu-content/ion-nav-view/ion-view[2]/ion-tabs/div[1]/ion-scroll/div/div/a[2]/span')
 
-    # userList = {"daizhong":"cmcc1qaz2wsx",
-    #             "wangxiaojie":"cmcc1qaz2wsx",
-    #             "yanglin":"cmcc1qaz2wsx",
-    #             "weibing":"cmcc1qaz2wsx",
-    #             "fangli":"cmcc1qaz2wsx",
-    #             "yuchengzhi":"cmcc1qaz2wsx",
-    #             "xuhaiyong":"cmcc1qaz2wsx",
-    #             "taotao":"123456",
-    #             "xiongwenjian":"123456",
-    #             "zhangtao":"cmcc1qaz2wsx",
-    #             "yejianfei":"cmcc1qaz2wsx"
-    #             }
-    userList = {"daizhong": "Pa$$w0rd",
-                "wangxiaojie": "Pa$$w0rd",
-                "yanglin": "Pa$$w0rd",
-                "weibing": "Pa$$w0rd",
-                "fangli": "Pa$$w0rd",
-                "yuchengzhi": "Pa$$w0rd",
-                "xuhaiyong": "Pa$$w0rd",
-                "taotao": "Pa$$w0rd",
-                "xiongwenjian": "Pa$$w0rd",
-                "zhangtao": "Pa$$w0rd",
-                "yejianfei": "Pa$$w0rd"
+    userList = {"daizhong":"cmcc1qaz2wsx",
+                "wangxiaojie":"cmcc1qaz2wsx",
+                "yanglin":"cmcc1qaz2wsx",
+                "weibing":"cmcc1qaz2wsx",
+                "fangli":"cmcc1qaz2wsx",
+                "yuchengzhi":"cmcc1qaz2wsx",
+                "xuhaiyong":"cmcc1qaz2wsx",
+                "taotao":"123456",
+                "xiongwenjian":"123456",
+                "zhangtao":"cmcc1qaz2wsx",
+                "yejianfei":"cmcc1qaz2wsx"
                 }
+    # userList = {"daizhong": "Pa$$w0rd",
+    #             "wangxiaojie": "Pa$$w0rd",
+    #             "yanglin": "Pa$$w0rd",
+    #             "weibing": "Pa$$w0rd",
+    #             "fangli": "Pa$$w0rd",
+    #             "yuchengzhi": "Pa$$w0rd",
+    #             "xuhaiyong": "Pa$$w0rd",
+    #             "taotao": "Pa$$w0rd",
+    #             "xiongwenjian": "Pa$$w0rd",
+    #             "zhangtao": "Pa$$w0rd",
+    #             "yejianfei": "Pa$$w0rd"
+    #             }
     # userList2 = {"youmingju": "Pa$$w0rd",
     #              "wangyimeng": "Pa$$w0rd",
     #              }
