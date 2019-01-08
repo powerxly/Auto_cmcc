@@ -163,6 +163,7 @@ class CmccCase(unittest.TestCase):
             #     time.sleep(2)
             # self.driver.switch_to.window(windows[0])
             # cmcc.close()
+            #testtest
 
 
     @classmethod
