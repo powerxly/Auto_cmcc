@@ -12,7 +12,7 @@ import os.path
 import yaml
 from selenium.webdriver.common.action_chains import ActionChains
 
-class CmccCase(unittest.TestCase):
+class Test_Gsfw_lcyq(unittest.TestCase):
 
 
     @classmethod
