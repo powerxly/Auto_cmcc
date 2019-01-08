@@ -4,8 +4,8 @@ brwserType:
   #browserName : IE
 
 testUrl:
-  #URL : http://cloudoa.test.hq.cmcc/cmoa-webapp1/customlogin/login.jsp
-  URL : http://cloudoa.hq.cmcc/cmoa-webapp1/customlogin/login.jsp
+  URL : http://cloudoa.test.hq.cmcc/cmoa-webapp1/customlogin/login.jsp
+  #URL : http://cloudoa.hq.cmcc/cmoa-webapp1/customlogin/login.jsp
 
 testUrlMobile:
   URL : http://10.2.87.115:8089/www/#/login
@@ -13,18 +13,14 @@ testUrlMobile:
 uatTestUrlMobile:
   URL : xxxxxxxxx
 
+jcyj:
+  commit: /html/body/div[1]/div/div[2]/div[1]/div/div/div[3]/button[1]
+  agree: //*[@id="agree_radio1"]
+  disagree: //*[@id="agree_radio2"]
+  other: //*[@id="agree_radio3"]
+  save: /html/body/div[1]/div/div[2]/div[1]/div/div/div[3]/button[2]
 
-#uatCommitButton(jcyj)：
-#  #提交按钮xpath路径
-#  commit:
-#  #同意、不同意、其他按钮xpath路径
-#  tybutton:
-#  btybutton:
-#  other:
-#  saveyj:
-#
-#ptyj:
-#  #普通意见提交下一步xpath路径
-#  commit:
-#
+ptyj:
+  commit:
 
+confirm: //*[@id="grcsp_submitInWindowButton"]

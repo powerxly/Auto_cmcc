@@ -23,7 +23,7 @@ class BrowserDriver(object):
         #读取配置文件
         file_path = os.path.dirname(os.getcwd())
         name_path = file_path + '\yaml\\browser.yaml'
-        with open(name_path, 'r') as f:
+        with open(name_path, 'r',encoding='UTF-8') as f:
             temp = yaml.load(f.read())
         # 获取配置文件属性
         brow = temp['brwserType']['browserName']
