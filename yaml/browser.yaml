@@ -21,6 +21,7 @@ jcyj:
   save: /html/body/div[1]/div/div[2]/div[1]/div/div/div[3]/button[2]
 
 ptyj:
-  commit:
+  textarea: //*[@id="comment_textarea"]
 
 confirm: //*[@id="grcsp_submitInWindowButton"]
+next: //*[@id="processFormSubmitNext"]

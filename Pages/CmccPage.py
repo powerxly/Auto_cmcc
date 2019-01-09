@@ -32,20 +32,28 @@ class CmccPage(BasePage):
     #             "zhangtao":"cmcc1qaz2wsx",
     #             "yejianfei":"cmcc1qaz2wsx"
     #             }
-    userList = {"daizhong": "Pa$$w0rd",
-                "wangxiaojie": "Pa$$w0rd",
-                "yanglin": "Pa$$w0rd",
-                "weibing": "Pa$$w0rd",
-                "fangli": "Pa$$w0rd",
-                "yuchengzhi": "Pa$$w0rd",
-                "xuhaiyong": "Pa$$w0rd",
-                "taotao": "Pa$$w0rd",
-                "xiongwenjian": "Pa$$w0rd",
-                "zhangtao": "Pa$$w0rd",
-                "yejianfei": "Pa$$w0rd"
+    # userList = {"daizhong": "Pa$$w0rd",
+    #             "wangxiaojie": "Pa$$w0rd",
+    #             "yanglin": "Pa$$w0rd",
+    #             "weibing": "Pa$$w0rd",
+    #             "fangli": "Pa$$w0rd",
+    #             "yuchengzhi": "Pa$$w0rd",
+    #             "xuhaiyong": "Pa$$w0rd",
+    #             "taotao": "Pa$$w0rd",
+    #             "xiongwenjian": "Pa$$w0rd",
+    #             "zhangtao": "Pa$$w0rd",
+    #             "yejianfei": "Pa$$w0rd"
+    #             }
+    userList2 = {"yaobo": "Pa$$w0rd",
+                 "youmeng": "Pa$$w0rd",
+                 "yangyong": "Pa$$w0rd",
+                 "caixuhui": "Pa$$w0rd",
+                 "wangwenchao": "Pa$$w0rd",
+                 "lijinze": "Pa$$w0rd",
+                 "bingtiefeng": "Pa$$w0rd",
+                 "caixuhui ": "Pa$$w0rd",
+                 "youmeng ": "Pa$$w0rd"
                 }
-    userList2 = {"youmeng": "Pa$$w0rd",
-                  }
     def input_cmcc_username(self,text):
         self.send_key(self.userName,text)
 
