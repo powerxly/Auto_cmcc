@@ -49,6 +49,7 @@ class Test_Gsfw_lcyq(unittest.TestCase):
         text_xpath = temp['ptyj']['textarea']
 
 
+        now = time.strftime("%Y-%m-%d_%H_%M_%S")
         for key,value in CmccPage.userList2.items():
             driver = BrowserDriver(self)
             self.driver = driver.openbrowser(self)
@@ -69,10 +70,8 @@ class Test_Gsfw_lcyq(unittest.TestCase):
                 self.driver.switch_to.frame('iframecontent-utsmain')
                 self.driver.find_element_by_xpath("//*[@id='todo']/tbody/tr[" + str(1) + "]/td[3]/a").click()
                 time.sleep(2)
-                windows = self.driver.window_handles
-                self.driver.switch_to.window(windows[1])
                 self.driver.implicitly_wait(30)
-                time.sleep(2)
+                cmcc.change_to_window(1)
 
                 #提交下一处理
                 self.driver.find_element_by_xpath(next_xpath).click()
@@ -123,18 +122,11 @@ class Test_Gsfw_lcyq(unittest.TestCase):
                     time.sleep(1)
                     self.driver.find_element_by_xpath(commit_xpath).click()
                     time.sleep(2)
-                    #处理“是否结束当前人处理”弹框
-                    flag = 1
-                    while flag:
-                        try:
-                            dig_alert = self.driver.switch_to.alert
-                            flag=0
-                        except Exception as e:
-                            print("未取到弹框")
-                            flag = 1
-                    time.sleep(1)
-                    dig_alert.accept()
-                    time.sleep(2)
+                    # 循环获取alert弹窗，取到则退出循环
+                    while 1:
+                        if cmcc.is_alert_present():
+                            break
+                    cmcc.click_alert()
 
 
                 # caixuhui蔡旭辉 送会签人员内部处理分支
@@ -189,17 +181,10 @@ class Test_Gsfw_lcyq(unittest.TestCase):
                     self.driver.find_element_by_xpath(commit_xpath).click()
                     time.sleep(2)
                     # 处理“是否结束当前人处理”弹框
-                    flag = 1
-                    while flag:
-                        try:
-                            dig_alert = self.driver.switch_to.alert
-                            flag = 0
-                        except Exception as e:
-                            print("未取到弹框")
-                            flag = 1
-                    time.sleep(1)
-                    dig_alert.accept()
-                    time.sleep(2)
+                    while 1:
+                        if cmcc.is_alert_present():
+                            break
+                    cmcc.click_alert()
 
 
                 if key=='bingtiefeng':
@@ -224,9 +209,9 @@ class Test_Gsfw_lcyq(unittest.TestCase):
                 time.sleep(2)
 
                 #填写表单
-                self.driver.find_element_by_xpath('//*[@id="phone"]').send_keys('联系电话联系电话联系电话联系电话')
+                self.driver.find_element_by_xpath('//*[@id="phone"]').send_keys('13901234567')
                 time.sleep(1)
-                self.driver.find_element_by_xpath('//*[@id="fileTitle"]').send_keys('文件标题文件标题文件标题文件标题')
+                self.driver.find_element_by_xpath('//*[@id="fileTitle"]').send_keys('文件标题'+ now)
                 time.sleep(1)
                 self.driver.find_element_by_xpath('//*[@id="zhuSong"]').send_keys('主送主送主送主送主送主送主送主送')
                 time.sleep(1)
@@ -241,21 +226,10 @@ class Test_Gsfw_lcyq(unittest.TestCase):
                 time.sleep(2)
 
             # 循环获取alert弹窗，取到则退出循环
-            flag=1
-            while flag:
-                try:
-                    dig_alert = self.driver.switch_to.alert
-                    flag = 0
-                except Exception as e:
-                    print("未取到弹框")
-                    flag = 1
-            time.sleep(1)
-            # 关闭之
-            dig_alert.accept()
-            time.sleep(2)
-
-            self.driver.switch_to.window(windows[0])
-            cmcc.close()
+            while 1:
+                if cmcc.is_alert_present():
+                    break
+            cmcc.click_alert()
 
     @classmethod
     def tearDownClass(cls):
