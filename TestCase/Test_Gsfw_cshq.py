@@ -23,7 +23,6 @@ class Test_Gsfw_lcyq(unittest.TestCase):
 
     def test_gsfw(self):
         #读取配置文件
-
         file_path = os.path.dirname(os.getcwd())
         name_path = file_path + '\yaml\\browser.yaml'
         with open(name_path, 'r') as f:
@@ -48,8 +47,8 @@ class Test_Gsfw_lcyq(unittest.TestCase):
         #普通意见，意见输入框
         text_xpath = temp['ptyj']['textarea']
 
-
         now = time.strftime("%Y-%m-%d_%H_%M_%S")
+
         for key,value in CmccPage.userList2.items():
             driver = BrowserDriver(self)
             self.driver = driver.openbrowser(self)
@@ -65,14 +64,13 @@ class Test_Gsfw_lcyq(unittest.TestCase):
             time.sleep(2)
 
             #非起草人
-            if key!='yaobo':
+            if key != 'yaobo':
                 #点击第一条待办
                 self.driver.switch_to.frame('iframecontent-utsmain')
                 self.driver.find_element_by_xpath("//*[@id='todo']/tbody/tr[" + str(1) + "]/td[3]/a").click()
                 time.sleep(2)
                 self.driver.implicitly_wait(30)
                 cmcc.change_to_window(1)
-
                 #提交下一处理
                 self.driver.find_element_by_xpath(next_xpath).click()
                 time.sleep(2)
@@ -116,18 +114,15 @@ class Test_Gsfw_lcyq(unittest.TestCase):
                     self.driver.find_element_by_xpath(confirm_xpath).click()
                     time.sleep(2)
 
-
                 if key=='yangyong':
                     self.driver.find_element_by_xpath(agree_xpath).click()
                     time.sleep(1)
                     self.driver.find_element_by_xpath(commit_xpath).click()
                     time.sleep(2)
                     # 循环获取alert弹窗，取到则退出循环
-                    while 1:
-                        if cmcc.is_alert_present():
-                            break
+                    while cmcc.is_alert_present() == False:
+                        pass
                     cmcc.click_alert()
-
 
                 # caixuhui蔡旭辉 送会签人员内部处理分支
                 if key=='caixuhui':
@@ -154,24 +149,14 @@ class Test_Gsfw_lcyq(unittest.TestCase):
                     self.driver.find_element_by_xpath(confirm_xpath).click()
                     time.sleep(2)
 
-
                 if key=='wangwenchao':
                     #填写会签意见，意见内容为“1”
                     self.driver.find_element_by_xpath(text_xpath).send_keys(1)
                     time.sleep(1)
                     self.driver.find_element_by_xpath(commit_xpath).click()
                     time.sleep(2)
-                    #点掉wangwenchao
-                    self.driver.find_element_by_xpath('//*[@id="grcsp_right_append_person_grcsp_append_processor_true"]/option').click()
-                    time.sleep(1)
-                    #选择bingtiefeng邴铁峰
-                    self.driver.find_element_by_xpath('//*[@id="grcsp_left_append_person_grcsp_append_processor_true_2_span"]').click()
-                    time.sleep(1)
-                    self.driver.find_element_by_xpath('//*[@id="grcsp_selectItemsSubmitButton"]').click()
-                    time.sleep(2)
                     self.driver.find_element_by_xpath(confirm_xpath).click()
                     time.sleep(2)
-
 
                 if key=='lijinze':
                     self.driver.find_element_by_xpath(text_xpath).send_keys(1)
@@ -180,20 +165,9 @@ class Test_Gsfw_lcyq(unittest.TestCase):
                     time.sleep(1)
                     self.driver.find_element_by_xpath(commit_xpath).click()
                     time.sleep(2)
-                    # 处理“是否结束当前人处理”弹框
-                    while 1:
-                        if cmcc.is_alert_present():
-                            break
+                    while cmcc.is_alert_present() == False:
+                        pass
                     cmcc.click_alert()
-
-
-                if key=='bingtiefeng':
-                    self.driver.find_element_by_xpath(text_xpath).send_keys(1)
-                    time.sleep(1)
-                    self.driver.find_element_by_xpath(commit_xpath).click()
-                    time.sleep(2)
-                    self.driver.find_element_by_xpath(confirm_xpath).click()
-                    time.sleep(2)
 
 
             #起草
@@ -203,9 +177,8 @@ class Test_Gsfw_lcyq(unittest.TestCase):
                 ActionChains(self.driver).move_to_element(ele).perform()
                 time.sleep(2)
                 self.driver.find_element_by_xpath('//*[@id="nav_sub"]/ul/li[1]/div/div/dl[1]/dd/a[3]').click()
-                windows = self.driver.window_handles
-                self.driver.switch_to.window(windows[1])
                 self.driver.implicitly_wait(30)
+                cmcc.change_to_window(1)
                 time.sleep(2)
 
                 #填写表单
@@ -218,7 +191,6 @@ class Test_Gsfw_lcyq(unittest.TestCase):
                 #令chrome浏览器可以编辑正文
                 self.driver.execute_script('''$("input[name='attachmentZW']").val("正文正文正文正文正文正文正文正文");''')
                 time.sleep(1)
-
                 #提交下一处理
                 self.driver.find_element_by_xpath(next_xpath).click()
                 time.sleep(2)
@@ -226,10 +198,12 @@ class Test_Gsfw_lcyq(unittest.TestCase):
                 time.sleep(2)
 
             # 循环获取alert弹窗，取到则退出循环
-            while 1:
-                if cmcc.is_alert_present():
-                    break
+            while cmcc.is_alert_present()==False:
+                pass
             cmcc.click_alert()
+
+            cmcc.change_to_window(0)
+            cmcc.close()
 
     @classmethod
     def tearDownClass(cls):
