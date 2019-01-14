@@ -48,9 +48,8 @@ class CmccPage(BasePage):
                  "youmeng": "Pa$$w0rd",
                  "yangyong": "Pa$$w0rd",
                  "caixuhui": "Pa$$w0rd",
-                 "wangwenchao": "Pa$$w0rd",
                  "lijinze": "Pa$$w0rd",
-                 "bingtiefeng": "Pa$$w0rd",
+                 "wangwenchao": "Pa$$w0rd",
                  "caixuhui ": "Pa$$w0rd",
                  "youmeng ": "Pa$$w0rd"
                 }
