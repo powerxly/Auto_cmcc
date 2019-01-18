@@ -4,8 +4,8 @@ brwserType:
   #browserName : IE
 
 testUrl:
-  #URL : http://cloudoa.test.hq.cmcc/cmoa-webapp1/customlogin/login.jsp
-  URL : http://cloudoa.hq.cmcc/cmoa-webapp1/customlogin/login.jsp
+  URL : http://cloudoa.test.hq.cmcc/cmoa-webapp1/customlogin/login.jsp
+  #URL : http://cloudoa.hq.cmcc/cmoa-webapp1/customlogin/login.jsp
 
 testUrlMobile:
   URL : http://10.2.87.115:8089/www/#/login
