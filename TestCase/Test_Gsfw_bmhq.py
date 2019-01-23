@@ -45,7 +45,7 @@ class Test_Gsfw_bmhq(unittest.TestCase):
         text_xpath = temp['ptyj']['textarea']
 
 
-        for key,value in CmccPage.userList3.items():
+        for key,value in CmccPage.userList_bmhq.items():
             driver = BrowserDriver(self)
             self.driver = driver.openbrowser(self)
             self.driver.implicitly_wait(30)

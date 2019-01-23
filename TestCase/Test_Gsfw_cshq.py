@@ -49,7 +49,7 @@ class Test_Gsfw_lcyq(unittest.TestCase):
 
         now = time.strftime("%Y-%m-%d_%H_%M_%S")
 
-        for key,value in CmccPage.userList2.items():
+        for key,value in CmccPage.userList_cshq.items():
             driver = BrowserDriver(self)
             self.driver = driver.openbrowser(self)
             self.driver.implicitly_wait(30)

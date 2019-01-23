@@ -44,7 +44,7 @@ class CmccPage(BasePage):
                 "zhangtao": "Pa$$w0rd",
                 "yejianfei": "Pa$$w0rd"
                 }
-    userList2 = {"yaobo": "Pa$$w0rd",
+    userList_cshq = {"yaobo": "Pa$$w0rd",
                  " youmeng": "Pa$$w0rd",
                  " yangyong": "Pa$$w0rd",
                  "caixuhui": "Pa$$w0rd",
@@ -54,7 +54,7 @@ class CmccPage(BasePage):
                  "youmeng ": "Pa$$w0rd"
                 }
 
-    userList3 = {" weilihong": "Pa$$w0rd",
+    userList_bmhq = {" weilihong": "Pa$$w0rd",
                  " gaolingling": "Pa$$w0rd",
                  "wangxiaoyun": "Pa$$w0rd",
                  "chenyurong": "Pa$$w0rd",
