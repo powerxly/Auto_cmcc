@@ -45,13 +45,24 @@ class CmccPage(BasePage):
     #             "yejianfei": "Pa$$w0rd"
     #             }
     userList2 = {"yaobo": "Pa$$w0rd",
-                 "youmeng": "Pa$$w0rd",
-                 "yangyong": "Pa$$w0rd",
+                 " youmeng": "Pa$$w0rd",
+                 " yangyong": "Pa$$w0rd",
                  "caixuhui": "Pa$$w0rd",
                  "lijinze": "Pa$$w0rd",
-                 "wangwenchao": "Pa$$w0rd",
-                 "caixuhui ": "Pa$$w0rd",
+                 " wangwenchao": "Pa$$w0rd",
+                 " caixuhui ": "Pa$$w0rd",
                  "youmeng ": "Pa$$w0rd"
+                }
+
+    userList3 = {" weilihong": "Pa$$w0rd",
+                 " gaolingling": "Pa$$w0rd",
+                 "wangxiaoyun": "Pa$$w0rd",
+                 "chenyurong": "Pa$$w0rd",
+                 " duqian": "Pa$$w0rd",
+                 "yushudan": "Pa$$w0rd",
+                 " guojian": "Pa$$w0rd",
+                 "duqian ": "Pa$$w0rd",
+                 " wangxiaoyun ": "Pa$$w0rd"
                 }
     def input_cmcc_username(self,text):
         self.send_key(self.userName,text)

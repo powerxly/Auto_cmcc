@@ -71,19 +71,26 @@ class Test_Gsfw_lcyq(unittest.TestCase):
                 time.sleep(2)
                 self.driver.implicitly_wait(30)
                 cmcc.change_to_window(1)
+
                 #提交下一处理
                 self.driver.find_element_by_xpath(next_xpath).click()
                 time.sleep(2)
 
-                #按人物执行分支
-                #youmeng尤梦提交会签分支
-                if key=='youmeng':
-                    #点击同意单选框
+                # try点选同意单选框，点不到说明是普通意见，在意见框输入1
+                try:
                     self.driver.find_element_by_xpath(agree_xpath).click()
-                    time.sleep(1)
-                    #点击提交
+                except Exception as e:
+                    self.driver.find_element_by_xpath(text_xpath).send_keys(1)
+                time.sleep(1)
+
+                # 列表设置key首位字符为空格，这类用户填完意见后直接提交
+                if key[0] == ' ':
                     self.driver.find_element_by_xpath(commit_xpath).click()
                     time.sleep(2)
+
+                #按人物执行分支
+                #youmeng尤梦提交会签分支
+                if key==' youmeng':
                     self.driver.find_element_by_xpath('//*[@id="grcsp_left_cjs_deps_sid-0D8D7D61-88EB-4773-BFA7-ED6325A1BF66_3_switch"]').click()
                     time.sleep(1)
                     #选择yangyong杨永
@@ -103,8 +110,6 @@ class Test_Gsfw_lcyq(unittest.TestCase):
 
                 #会签完毕，提交主办领导分支
                 if key=='youmeng ':
-                    self.driver.find_element_by_xpath(agree_xpath).click()
-                    time.sleep(1)
                     self.driver.find_element_by_xpath('//*[@id="grcsp_tran_li_sid-27932EF0-46A4-44A3-8D7D-1DAC7CF4B092"]/a').click()
                     time.sleep(1)
                     self.driver.find_element_by_xpath(commit_xpath).click()
@@ -114,11 +119,7 @@ class Test_Gsfw_lcyq(unittest.TestCase):
                     self.driver.find_element_by_xpath(confirm_xpath).click()
                     time.sleep(2)
 
-                if key=='yangyong':
-                    self.driver.find_element_by_xpath(agree_xpath).click()
-                    time.sleep(1)
-                    self.driver.find_element_by_xpath(commit_xpath).click()
-                    time.sleep(2)
+                if key==' yangyong':
                     # 循环获取alert弹窗，取到则退出循环
                     while cmcc.is_alert_present() == False:
                         pass
@@ -126,8 +127,6 @@ class Test_Gsfw_lcyq(unittest.TestCase):
 
                 # caixuhui蔡旭辉 送会签人员内部处理分支
                 if key=='caixuhui':
-                    self.driver.find_element_by_xpath(agree_xpath).click()
-                    time.sleep(1)
                     self.driver.find_element_by_xpath('//*[@id="grcsp_tran_li_sid-03B187F8-F516-4E15-AB51-8A891188E3F0"]/a').click()
                     time.sleep(1)
                     self.driver.find_element_by_xpath(commit_xpath).click()
@@ -141,26 +140,11 @@ class Test_Gsfw_lcyq(unittest.TestCase):
                     time.sleep(2)
 
                 #送回部门领导审核分支
-                if key=='caixuhui ':
-                    self.driver.find_element_by_xpath(agree_xpath).click()
-                    time.sleep(1)
-                    self.driver.find_element_by_xpath(commit_xpath).click()
-                    time.sleep(2)
-                    self.driver.find_element_by_xpath(confirm_xpath).click()
-                    time.sleep(2)
-
-                if key=='wangwenchao':
-                    #填写会签意见，意见内容为“1”
-                    self.driver.find_element_by_xpath(text_xpath).send_keys(1)
-                    time.sleep(1)
-                    self.driver.find_element_by_xpath(commit_xpath).click()
-                    time.sleep(2)
+                if key==' caixuhui ' or key==' wangwenchao':
                     self.driver.find_element_by_xpath(confirm_xpath).click()
                     time.sleep(2)
 
                 if key=='lijinze':
-                    self.driver.find_element_by_xpath(text_xpath).send_keys(1)
-                    time.sleep(1)
                     self.driver.find_element_by_xpath('//*[@id="grcsp_tran_li_grcsp_append_processor_false"]/a').click()
                     time.sleep(1)
                     self.driver.find_element_by_xpath(commit_xpath).click()
