@@ -52,7 +52,7 @@ class CmccPage(BasePage):
                  " wangwenchao": "Pa$$w0rd",
                  " caixuhui ": "Pa$$w0rd",
                  "youmeng ": "Pa$$w0rd"
-                }
+                    }
 
     userList_bmhq = {" weilihong": "Pa$$w0rd",
                  " gaolingling": "Pa$$w0rd",
@@ -63,7 +63,14 @@ class CmccPage(BasePage):
                  " guojian": "Pa$$w0rd",
                  "duqian ": "Pa$$w0rd",
                  " wangxiaoyun ": "Pa$$w0rd"
-                }
+                    }
+
+    userList_drqb = {"tanchun": "Pa$$w0rd",
+                     "fangfang": "Pa$$w0rd",
+                     "shangbing": "Pa$$w0rd",
+                     "youmingju": "Pa$$w0rd",
+                     "wanghuaguang": "Pa$$w0rd"
+                    }
     def input_cmcc_username(self,text):
         self.send_key(self.userName,text)
 
