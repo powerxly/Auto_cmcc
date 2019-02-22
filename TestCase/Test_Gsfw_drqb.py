@@ -3,7 +3,8 @@
 
 # 完成bmhq（部门会签）脚本后再运行此脚本
 #本脚本仅运行至发送文件，目的是仅测试多人任务环节是否正常
-#查看待阅直接使用已有脚本
+#查看待阅直接使用已有脚本，编辑cmccpage增加查看待阅的用户
+#liyin李寅，youmingju游明菊，wanghuaguang王华光
 
 import unittest
 from Pages.CmccPage import CmccPage
