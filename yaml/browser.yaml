@@ -9,9 +9,7 @@ testUrl:
 
 testUrlMobile:
   URL : http://10.2.87.115:8089/www/#/login
-
-uatTestUrlMobile:
-  URL : xxxxxxxxx
+  #URL : http://10.2.86.242:8089/www/#/login
 
 jcyj:
   commit: /html/body/div[1]/div/div[2]/div[1]/div/div/div[3]/button[1]
