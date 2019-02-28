@@ -30,7 +30,7 @@ class Test_ToreadCheck_pc(unittest.TestCase):
             cmcc.click(['id','gViewCloseBtnGViewInfo'])
 
 
-            for i in range(5):
+            for i in range(4):
                 try:
                     self.driver.switch_to.frame('iframecontent-utsmain')
                     cmcc.click(["xpath",'//*[@id="showRecord_3"]'])

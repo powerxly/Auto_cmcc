@@ -29,7 +29,7 @@ class Test_TodoCheck_pc(unittest.TestCase):
             cmcc.click(['id','gViewCloseBtnGViewInfo'])
 
 
-            for i in range(5):
+            for i in range(4):
                 try:
                     self.driver.switch_to.frame('iframecontent-utsmain')
                     self.driver.find_element_by_xpath("//*[@id='todo']/tbody/tr["+ str(i+1) +"]/td[3]/a").click()
