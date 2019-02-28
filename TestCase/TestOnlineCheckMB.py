@@ -32,19 +32,29 @@ class TestOnlineCheckMB(unittest.TestCase):
             time.sleep(2)
             cmcc.click_cmcc_btn_mb()
             time.sleep(1)
-            cmcc.click(CmccPage.firstTodomb)#这里入手，点击当前页面所有代办
-            time.sleep(2)
             try:
-                cmcc.click(CmccPage.formText)
-                cmcc.get_screent_img()
-            except Exception as e:
-                print(Exception, ":", e)
-            try:
-                cmcc.click(CmccPage.handleButton)
-                cmcc.get_screent_img()
-            except Exception as d:
-                print(Exception, ":",d)
+                cmcc.click(CmccPage.firstTodomb)#这里入手，点击当前页面所有代办
+
+                try:
+                    cmcc.click(CmccPage.formText)  # 点击正文
+                    cmcc.get_screent_img()
+                except Exception as e:
+                    print(Exception, ":", e)
+                    print("没有正文")
+                time.sleep(2)
+
+                try:
+                    cmcc.click(CmccPage.handleButton)  # 点击处理
+                    cmcc.get_screent_img()
+                except Exception as d:
+                    print(Exception, ":", d)
+                time.sleep(2)
+
+            except Exception as c:
+                print(Exception, ":", c)
+                print("没有待办")
             time.sleep(2)
+
             self.driver.close()
 
     @classmethod
