@@ -2,7 +2,7 @@
 # # # __author__ = 'Jasonleeyag'
 
 import unittest
-from Pages.CmccPage import CmccPage
+from Pages.ProductPage import CmccPage
 from Base.BrowserDriver import BrowserDriver
 import time
 from selenium.webdriver.common.action_chains import ActionChains

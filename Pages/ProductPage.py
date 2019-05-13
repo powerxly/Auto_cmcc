@@ -2,15 +2,15 @@
 from selenium.webdriver.common.by import By
 from Base.Selenium2 import BasePage
 
-class CmccPage(BasePage):
+class ProductPage(BasePage):
     """
     在这里写定位器，通过元素属性定位元素对象
     """
     ###PC端元素###
-    userName = (By.NAME,'userName')#定位用户名输入框
-    passWord = (By.NAME,'password')#定位密码输入框
-    loginButton = (By.NAME, 'loginButton')  # 定位登录按钮
-
+    userName = (By.ID,'username')#定位用户名输入框
+    passWord = (By.ID,'password')#定位密码输入框
+    loginButton = (By.ID, 'login')  # 定位登录按钮
+    oaLink = (By.ID,'oa_link')
 
     ###移动端元素###
     userNameMobile = (By.XPATH,'//*[@id="loginForm"]/div[2]/label[1]/input')
@@ -20,17 +20,7 @@ class CmccPage(BasePage):
     handleButton = (By.XPATH,'/html/body/ion-side-menus/ion-side-menu-content/ion-nav-view/ion-view[2]/ion-tabs/div[3]/div/ion-footer-bar')
     formText = (By.XPATH,'/html/body/ion-side-menus/ion-side-menu-content/ion-nav-view/ion-view[2]/ion-tabs/div[1]/ion-scroll/div/div/a[2]/span')
 
-    userList = {"daizhong":"cmcc1qaz2wsx",
-                "wangxiaojie":"cmcc1qaz2wsx",
-                "yanglin":"cmcc1qaz2wsx",
-                "weibing":"cmcc1qaz2wsx",
-                "fangli":"cmcc1qaz2wsx",
-                "yuchengzhi":"cmcc1qaz2wsx",
-                "xuhaiyong":"cmcc1qaz2wsx",
-                "taotao":"123456",
-                "xiongwenjian":"123456",
-                "zhangtao":"cmcc1qaz2wsx",
-                "yejianfei":"cmcc1qaz2wsx"
+    userList = {"admin":"admin"
                 }
     # userList = {"daizhong": "Pa$$w0rd",
     #             "wangxiaojie": "Pa$$w0rd",
@@ -47,21 +37,24 @@ class CmccPage(BasePage):
     # userList2 = {"youmingju": "Pa$$w0rd",
     #              "wangyimeng": "Pa$$w0rd",
     #              }
-    def input_cmcc_username(self,text):
+    def input_pdt_username(self,text):
         self.send_key(self.userName,text)
 
-    def input_cmcc_password(self, text):
+    def input_pdt_password(self, text):
         self.send_key(self.passWord,text)
 
-    def input_cmcc_username_mb(self,text):
+    def input_pdt_username_mb(self,text):
         self.send_key(self.userNameMobile,text)
 
-    def input_cmcc_password_mb(self, text):
+    def input_pdt_password_mb(self, text):
         self.send_key(self.passWordMobile,text)
 
-    def click_cmcc_btn(self):
+    def click_pdt_btn(self):
         self.click(self.loginButton)
 
-    def click_cmcc_btn_mb(self):
+    def click_pdt_btn_mb(self):
         self.click(self.loginButtonMobile)
+
+    def click_oa_link_button(self):
+        self.click(self.oaLink)
 

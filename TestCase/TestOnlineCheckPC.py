@@ -4,7 +4,7 @@
 # @Email   : 394856389@qq.com
 
 import unittest
-from Pages.CmccPage import CmccPage
+from Pages.ProductPage import CmccPage
 from Base.BrowserDriver import BrowserDriver
 import time
 class TestOnlineCheckPC(unittest.TestCase):

@@ -5,7 +5,7 @@
 
 import unittest
 from selenium import webdriver
-from Pages.CmccPage import CmccPage
+from Pages.ProductPage import CmccPage
 from Base.BrowserDriver import BrowserDriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.touch_actions import TouchActions

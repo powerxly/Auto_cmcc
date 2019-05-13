@@ -4,10 +4,10 @@
 # @Email   : 394856389@qq.com
 import unittest
 from selenium import webdriver
-from Pages.CmccPage import CmccPage
+from Pages.ProductPage import ProductPage
 from Base.BrowserDriver import BrowserDriver
 import time
-class CmccCase(unittest.TestCase):
+class Product_Case(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
