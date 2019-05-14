@@ -268,4 +268,12 @@ class BasePage(object):
         except NoSuchElementException as nsee:
             logger.error("关闭浏览器窗口失败 %s" % nsee)
 
+    def change_to_right_window(self,timeout=10):
+        result = WebDriverWait(self.driver, timeout, 1)
+        windows = self.driver.window_handles
+        self.driver.switch_to.window(windows[1])
+
+
+
+
 
